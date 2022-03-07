@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order form</title>
+    <link href="{{url_for('static', filename='form.css')}}" rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>User Information</h1>
+      <form action="userinfoconn.html" method="post">
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name">
+          <input type="text" name="age" placeholder="Age">
+          <input type="text" name="weight_in_kgs" placeholder="Weight in Kgs">
+          <input type="text" name="height_in_cms" placeholder="Height in Cms">
+          <select name="what_do_you_want_to_do">
+            <option value="category" disabled selected>What do you want to do?</option>
+            <option value="wieght loss">Weight Loss</option>
+            <option value="healthy">Healthy</option>
+            <option value="weight gain">Weight Gain</option>
+          </select>
+          <select name="how_much_is_your_daily_acitivity">
+            <option value="activity" disabled selected>How much is your daily activity?</option>
+            <option value="very light">Very Light</option>
+            <option value="light">Light</option>
+            <option value="moderate">Moderate</option>
+            <option value="heavy">Heavy</option>
+            <option value="very heavy">Very Heavy</option>
+          </select>
+        </div>
+        <h3>Gender</h3>
+        <div class="metod">
+          <div> 
+            <input type="radio" value="male" id="radioOne" name="gender" checked/>
+            <label for="radioOne" class="radio">Male</label>
+          </div>
+          <div>
+            <input type="radio" value="female" id="radioTwo" name="gender" />
+            <label for="radioTwo" class="radio">Female</label>
+          </div>
+          <div>
+            <input type="radio" value="other" id="radioThree" name="gender" />
+            <label for="radioThree" class="radio">Other</label>
+          </div>
+        </div>
+        <button href="/" name="submit" class="button">Submit</button>
+        <a href="logout.html">Logout</a>
+      </form>
+    </div>
+    
+  </body>
+</html>

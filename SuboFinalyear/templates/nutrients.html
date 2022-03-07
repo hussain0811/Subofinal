@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lol2</title>
+</head>
+<body>
+	<h2>Breakfast</h2>
+	{%for i in range(lenbreakfastrecom)%}
+	<h3> {{breakfastrecom[i][0]}}</h3>
+	<h4>  Alternative 1 - {{breakfastalt[i][0]}}</h4>
+	<h4>  Alternative 2 - {{breakfastalt[i][1]}}</h4>
+	{%endfor%}
+	<h2>Lunch</h2>
+	{%for i in range(lenlunchrecom)%}
+	<h3> {{lunchrecom[i][0]}}</h3>
+	<h4>  Alternative 1 - {{lunchalt[i][0]}}</h4>
+	<h4>  Alternative 2 - {{lunchalt[i][1]}}</h4>
+	{%endfor%}
+	<h2>Dinner</h2>
+	{%for i in range(lendinnerrecom)%}
+	<h3> {{dinnerrecom[i][0]}}</h3>
+	<h4>  Alternative 1 - {{dinneralt[i][0]}}</h4>
+	<h4>  Alternative 2 - {{dinneralt[i][1]}}</h4>
+	{%endfor%}
+
+
+</body>
+</html>

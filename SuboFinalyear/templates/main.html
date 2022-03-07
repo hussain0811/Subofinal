@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lol</title>
+</head>
+<body>
+	<form  method="POST" action="{{url_for('nutrients')}}">
+		<div>
+		<p>Enter Gender</p> <select name="gender">
+			<option value="0">Male</option>
+			<option value="1">Female</option>
+		</select>
+	</div>
+	<div>
+		<p>Enter Gender</p> <select name="active">
+			<option value="1.2">Sedentary </option>
+			<option value="1.375">Lightly active</option>
+			<option value="1.55">Moderately active</option>
+			<option value="1.725">Very active </option>
+			<option value="1.9">Extra active</option>
+		</select>
+	</div>
+	<div>
+	<p>Enter Age</p> <input type="number" name="age">
+</div>
+<div>
+	<p>Enter Weight</p> <input type="number" name="weight">
+</div>	
+<div>
+	<p>Enter Height</p> <input type="number" name="height">
+</div>	
+	<input type="submit"/>
+	</form>
+
+</body>
+</html>

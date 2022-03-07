@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet</title>
+
+    <style type="text/css">
+        
+    </style>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" >
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><img src="{{url_for('static', filename='logo.png')}}" alt=""></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#product">product</a>
+        <a href="#about">about</a>
+        <a href="#service">service</a>
+        <a href="{{ url_for('index') }}">Log In</a>
+        <a href="{{ url_for('contact') }}">contact</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="home_image">
+        <img src="{{url_for('static', filename='image1.png')}}" alt="" width="850" height="600">
+    </div>
+    <div class="content">
+        <h3>Stay Fit,Stay Healthy</h3>
+        <p>A good nutritious healthy diet and a moderate amount of physical activity can help in maintaining a healthy weight. But the benefits of good nutrition have a lot more to do than just managing the weight</p>
+        <a href="#"><button class="btn">discover more</button></a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+<!-- product section starts  -->
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading">about us</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="{{url_for('static', filename='logo.png')}}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Inadequate and inappropriate intake of food is known to cause various health issues and diseases. Due to lack of concise information about healthy diet, people have to rely on medicines instead of taking preventive measures in food intake. Due to diversity in food components and large number of dietary sources, it is challenging to perform real-time selection of diet patterns that must fulfill one’s nutrition needs. Particularly, selection of proper diet is critical for patients suffering from various diseases.</p>
+
+            <a href="#"><button class="btn">learn more</button></a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+<!-- review section ends -->
+<!-- contact section starts  -->
+
+<!-- contact section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    </div>
+
+    <h1 class="credit"> created by <span>STAY FIT</span> | &copy; 2021 Mumbai,India.All rights reserved </h1>
+
+</section>
+
+<!-- scroll top  -->
+<a href="#home"  id="scroll-top">Top</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="{{url_for('static', filename='script.js')}}"></script>
+
+</body>
+</html>
